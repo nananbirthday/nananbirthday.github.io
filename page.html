@@ -8,8 +8,8 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f4f4f4;
-      padding: 50px;
+      background-color: #b9f4ff;
+      padding: 5px;
     }
     
     #content {
@@ -23,60 +23,255 @@
 
     h1 {
       color: #ff6f61;
+      font-size: 150%;
     }
 
     #montage {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
       margin-top: 30px;
     }
 
-    .image {
-      width: 200px;
-      height: 200px;
-      margin: 10px;
-      border-radius: 50%;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Carousel styles */
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin-top: 30px;
     }
 
-    .image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .mySlides {
+      display: none;
     }
 
-    p {
-      margin-top: 20px;
-      color: #555;
+    .mySlides img {
+      width: 25%;
+      height: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
     }
   </style>
 </head>
 <body>
   <div id="content">
-    <h1>Happy Birthday!</h1>
-    <div id="montage">
-      <div class="image">
-        <img src="https://via.placeholder.com/200" alt="Image 1">
+    <h1>Happy Birthday Thel Thel Lay!</h1>
+    
+    <p>Enjoy our video calls throughout time!</p>
+    <!-- Image carousel -->
+    <div class="slideshow-container">
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="mySlides fade">
+        <img src="Nanan/First Screenshot.jpg" alt="Image 1">
+        <p>First screenshot</p>
       </div>
-      <div class="image">
-        <img src="https://via.placeholder.com/200" alt="Image 2">
+
+      <div class="mySlides fade">
+        <img src="Nanan/Beautiful.jpg" alt="Image 2">
+        <p>Beautiful</p>
       </div>
-      <div class="image">
-        <img src="https://via.placeholder.com/200" alt="Image 3">
+
+      <div class="mySlides fade">
+        <img src="Nanan/Best best smile.jpg" alt="Image 3">
+        <p>Best best smile</p>
       </div>
-      <div class="image">
-        <img src="https://via.placeholder.com/200" alt="Image 4">
+
+      <div class="mySlides fade">
+        <img src="Nanan/Best smile again.jpg" alt="Image 4">
+        <p>Best smile again</p>
       </div>
-      <div class="image">
-        <img src="https://via.placeholder.com/200" alt="Image 5">
+
+      <div class="mySlides fade">
+        <img src="Nanan/Best Smile ever.jpg" alt="Image 5">
+        <p>Best smile ever</p>
       </div>
-      <div class="image">
-        <img src="https://via.placeholder.com/200" alt="Image 6">
+
+      <div class="mySlides fade">
+        <img src="Nanan/Bullying Nanan in gin rummy.jpg" alt="Image 6">
+        <p>Bullying Nanan in gin rummy</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Cherry lips.jpg" alt="Image 7">
+        <p>Cherry lips</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Cute.jpg" alt="Image 8">
+        <p>Cute</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Hahahaha.jpg" alt="Image 9">
+        <p>Hahahahaha</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Hehe.jpg" alt="Image 10">
+        <p>Hehe</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Hmmmm.jpg" alt="Image 11">
+        <p>Hmmmm</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Huh.jpg" alt="Image 12">
+        <p>Huh</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Idk.jpg" alt="Image 13">
+        <p>Idk (cute tho)</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Is it a straw, is it a pen, IDK.jpg" alt="Image 14">
+        <p>Is it a straw? Is it a pen? I don't really know. XD</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Loveee.jpg" alt="Image 15">
+        <p>Loveee</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Nanan inspecting.jpg" alt="Image 16">
+        <p>Inspector Nanan</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Octo Angy.jpg" alt="Image 17">
+        <p>Angy Octo</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Pretty.jpg" alt="Image 18">
+        <p>Prettyy</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Promise.jpg" alt="Image 19">
+        <p>Promise</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Sleey baby.jpg" alt="Image 20">
+        <p>Sleepy baby</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Sleepy baby 2.jpg" alt="Image 21">
+        <p>Sleepy baby 2</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Sleepy baby 3.jpg" alt="Image 22">
+        <p>Sleepy baby 3</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Sleepy gin rummy.jpg" alt="Image 23">
+        <p>Sleepy gin rummy</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Swaggy sleepy.jpg" alt="Image 24">
+        <p>Swaggy sleepy</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/So cute.jpg" alt="Image 25">
+        <p>Sooo cuteeee</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Smirk.jpg" alt="Image 26">
+        <p>Smirk</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Thel thel lay.jpg" alt="Image 27">
+        <p>Thel Thel Lay</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Uwuw.jpg" alt="Image 28">
+        <p>Uuuuuwwwwwuuuuu</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/What a beauty.jpg" alt="Image 29">
+        <p>Beauty</p>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Nanan/Working hard.jpg" alt="Image 30">
+        <p>Working hard</p>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="Nanan/Working hard part 2.jpg" alt="Image 31">
+        <p>Working hard again</p>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="Nanan/Working hard, looks fantastic in my shirt.jpg" alt="Image 32">
+        <p>Wifey material, plus looks great in that shirt</p>
       </div>
     </div>
+
     <p>Happy birthday, my love! Here's to many more wonderful memories together.</p>
   </div>
+
+  <script>
+    // JavaScript for the image carousel
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+  </script>
 </body>
 </html>
